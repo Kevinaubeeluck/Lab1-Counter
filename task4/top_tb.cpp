@@ -9,7 +9,7 @@ int main(int argc, char **argv, char **env) {
 
     Verilated::commandArgs(argc, argv);
     Vtop* top = new Vtop;
-
+    
     Verilated::traceEverOn(true);
     VerilatedVcdC* tfp = new VerilatedVcdC;
     top->trace(tfp, 99);
